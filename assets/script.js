@@ -21,8 +21,6 @@ $(document).ready(function(){
         let alist = $(blurb).find('p').find('a');
         let firstlink = alist[0].title.split(" ").join("_");
         let urlString = "http://wikipedia.com/wiki/" + firstlink;
-        console.log(urlString);
-        console.log(firstlink);
         window.location.href = urlString;
         $('#links').html(alist);
 
